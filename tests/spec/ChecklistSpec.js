@@ -17,4 +17,14 @@ describe('Checklist', function () {
     checklist.setName('third name..');
     expect(checklist.getName()).toEqual('third name..');
   });
+
+  it('is able to have sections added to it', function () {
+    expect(checklist.getSections().length).toEqual(0);
+
+    checklist.addSection(new ChecklistSection());
+    expect(checklist.getSections().length).toEqual(1);
+
+    checklist.addSection(new ChecklistSection());
+    expect(checklist.getSections().length).toEqual(2);
+  });
 });
