@@ -1,0 +1,21 @@
+<div>
+  <ul class="list-unstyled">
+    <li ng-repeat="checklist in checklists">
+      
+      <span>{{checklist.getName()}}</span>
+      <ul>
+        <li ng-repeat="section in checklist.getSections()">
+
+          <span>{{section.getName()}}</span>
+          <ul>
+            <li ng-repeat="item in section.getItems()">
+              <span>{{item.getName()}} - {{item.getValue()}}</span>
+            </li>
+          </ul>
+
+        </li>
+      </ul>
+
+    </li>
+  </ul>
+</div>

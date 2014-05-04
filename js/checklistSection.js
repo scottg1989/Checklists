@@ -1,20 +1,20 @@
-function ChecklistSection(name) {
-  this.name = name;
-  this.items = [];
+function ChecklistSection(name, items) {
+  this._name = name;
+  this._items = (items === undefined ? [] : items);
 }
 
 ChecklistSection.prototype.setName = function (name) {
-  this.name = name;
+  this._name = name;
 };
 
 ChecklistSection.prototype.getName = function () {
-  return this.name;
+  return this._name;
 };
 
 ChecklistSection.prototype.getItems = function () {
-  return this.items;
+  return this._items;
 };
 
 ChecklistSection.prototype.addItem = function (item) {
-  this.items.push(item);
+  this._items.push(item);
 };

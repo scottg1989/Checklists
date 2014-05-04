@@ -27,4 +27,14 @@ describe('ChecklistSection', function () {
     section.addItem(new ChecklistItem());
     expect(section.getItems().length).toEqual(2);
   });
+
+  it('can take a collection of items in it\'s constructor', function () {
+    section = new ChecklistSection('', [
+      new ChecklistItem(),
+      new ChecklistItem()
+    ]);
+
+    expect(section.getItems().length).toEqual(2);
+  });
+
 });

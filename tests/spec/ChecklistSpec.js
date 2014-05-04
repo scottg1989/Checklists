@@ -1,4 +1,4 @@
-/*global describe, expect, beforeEach, it, Checklist */
+/*global describe, expect, beforeEach, it, Checklist, ChecklistSection */
 
 describe('Checklist', function () {
   var checklist;
@@ -25,6 +25,15 @@ describe('Checklist', function () {
     expect(checklist.getSections().length).toEqual(1);
 
     checklist.addSection(new ChecklistSection());
+    expect(checklist.getSections().length).toEqual(2);
+  });
+
+  it('can take a collection of sections in it\'s constructor', function () {
+    checklist = new Checklist('', [
+      new ChecklistSection(),
+      new ChecklistSection()
+    ]);
+
     expect(checklist.getSections().length).toEqual(2);
   });
 });
