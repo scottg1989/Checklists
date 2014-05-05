@@ -1,21 +1,12 @@
 <div>
-  <ul class="list-unstyled">
-    <li ng-repeat="checklist in checklists">
-      
-      <span>{{checklist.getName()}}</span>
-      <ul>
-        <li ng-repeat="section in checklist.getSections()">
-
-          <span>{{section.getName()}}</span>
-          <ul>
-            <li ng-repeat="item in section.getItems()">
-              <span>{{item.getName()}} - {{item.getValue()}}</span>
-            </li>
-          </ul>
-
-        </li>
-      </ul>
-
-    </li>
-  </ul>
+  <div class="col-md-4" ng-repeat="checklist in checklists">
+    <a ng-href="#/checklist/{{checklist.getId()}}">
+      <div class="checklist-card panel panel-default">
+        <div class="panel-body">
+          <img ng-src="{{checklist.getImageUrl()}}" width="100%" height="300px" />
+          <h3>{{checklist.getName()}}</h3>
+        </div>
+      </div>
+    </a>
+  </div>
 </div>
