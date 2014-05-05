@@ -6,17 +6,21 @@
 				<a ng-repeat="section in checklist.getSections()"
 					class="list-group-item {{section.getId() === activeSection.getId() ? 'active' : ''}}" 
 					ng-href="#/checklist/{{checklist.getId()}}/{{section.getId()}}">
-						<span class="badge">{{section.getItemCount()}}</span>
+						<span class="badge">{{section.getUncheckedItemCount()}}</span>
 						{{section.getName()}}
 				</a>
 			</ul>
 		</div>
 		<div class="col-md-8">
 			<div class="panel panel-default">
-				<div class="panel-body">
-					<ul>
-						<li ng-repeat="item in activeSection.getItems()">{{item.getName()}} - {{item.getValue()}}</li>
-					</ul>
+				<div class="panel-body secton-items">
+					<div ng-class-odd="'row row-odd'" ng-class-even="'row row-even'" ng-repeat="item in activeSection.getItems()">
+						<div class="col-md-6 row-inner">
+							<input type="checkbox" ng-checked="item.isChecked()" ng-click="item.switchChecked()" />
+							<span class="{{item.isChecked() ? 'checked-item-text' : 'item-text'}}">{{item.getName()}}</span>
+						</div>
+						<em class="{{item.isChecked() ? 'checked-item-text' : 'item-text'}}">{{item.getValue()}}</em>
+					</div>
 				</div>
 			</div>
 		</div>

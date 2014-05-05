@@ -1,20 +1,33 @@
 function ChecklistItem(name, value) {
-  this.name = name;
-  this.value = value;
+  this._name = name;
+  this._value = value;
+  this._checked = false;
 }
 
 ChecklistItem.prototype.setName = function (name) {
-  this.name = name;
+  this._name = name;
 };
 
 ChecklistItem.prototype.getName = function () {
-  return this.name;
+  return this._name;
 };
 
 ChecklistItem.prototype.setValue = function (value) {
-  this.value = value;
+  this._value = value;
 };
 
 ChecklistItem.prototype.getValue = function () {
-  return this.value;
+  return this._value;
+};
+
+ChecklistItem.prototype.setChecked = function (checked) {
+  this._checked = checked;
+};
+
+ChecklistItem.prototype.isChecked = function () {
+  return this._checked;
+};
+
+ChecklistItem.prototype.switchChecked = function () {
+  this._checked = !this._checked;
 };

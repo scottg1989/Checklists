@@ -15,3 +15,24 @@ body {
 	color: rgb(30, 30, 30);
 	background-color: #F0F0F0;
 }
+
+.row-even {
+    background-color:#F1F1F1;
+    margin: 0px;
+}
+
+.row-odd {
+    margin: 0px;
+}
+
+.row-inner {
+	padding: 2px;
+}
+
+.checked-item-text {
+	text-decoration: line-through;
+	color: #666;	
+}
+
+.item-text {
+}

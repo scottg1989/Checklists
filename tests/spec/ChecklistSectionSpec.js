@@ -44,6 +44,16 @@ describe('ChecklistSection', function () {
     expect(section.getItemCount()).toEqual(3);
   });
 
+  it('can return a count of it\'s unchecked items', function () {
+    section.addItem(new ChecklistItem());
+    section.addItem(new ChecklistItem());
+    section.addItem(new ChecklistItem());
+
+    section.getItems()[0].setChecked(true);
+
+    expect(section.getUncheckedItemCount()).toEqual(2);
+  });
+
   it('can take a collection of items in it\'s constructor', function () {
     section = new ChecklistSection(0, '', [
       new ChecklistItem(),

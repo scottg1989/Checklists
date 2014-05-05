@@ -24,4 +24,24 @@ describe('ChecklistItem', function () {
     item.setValue('third value');
     expect(item.getValue()).toEqual('third value');
   });
+
+  it('can be checked', function () {
+    expect(item.isChecked()).toEqual(false);
+
+    item.setChecked(true);
+    expect(item.isChecked()).toEqual(true);
+
+    item.setChecked(false);
+    expect(item.isChecked()).toEqual(false);
+  });
+
+  it('supports simple switch check call', function () {
+    expect(item.isChecked()).toEqual(false);
+
+    item.switchChecked();
+    expect(item.isChecked()).toEqual(true);
+
+    item.switchChecked();
+    expect(item.isChecked()).toEqual(false);
+  });
 });

@@ -31,3 +31,9 @@ ChecklistSection.prototype.getItems = function () {
 ChecklistSection.prototype.getItemCount = function () {
   return this.getItems().length;
 };
+
+ChecklistSection.prototype.getUncheckedItemCount = function () {
+  return _.filter(this.getItems(), function (item) {
+    return !item.isChecked();
+  }).length;
+};
