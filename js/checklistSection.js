@@ -34,6 +34,6 @@ ChecklistSection.prototype.getItemCount = function () {
 
 ChecklistSection.prototype.getUncheckedItemCount = function () {
   return _.filter(this.getItems(), function (item) {
-    return !item.isChecked();
+    return item.isCheckable() && !item.isChecked();
   }).length;
 };

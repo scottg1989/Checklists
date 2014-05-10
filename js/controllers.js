@@ -153,7 +153,7 @@ var checklist3 = new Checklist(3, 'Cessna 172 SP', [
       new ChecklistItem('Flaps', 'CHECK UP')
     ]),
     new ChecklistSection(13, 'Approach Checklist', [
-      new ChecklistItem('Localizer Level Flight :', ''), //checkable=false
+      new ChecklistItem('Localizer Level Flight', '', false),
       new ChecklistItem('Fuel Pump', 'ON'),
       new ChecklistItem('Speed: Establish', '85 KIAS  2100 RPM'),
       new ChecklistItem('Landing Lights', 'ON'),
@@ -161,7 +161,7 @@ var checklist3 = new Checklist(3, 'Cessna 172 SP', [
       new ChecklistItem('Speed: Establish', '80 KIAS  2100 RPM'),
       new ChecklistItem('Flaps', '20 degrees  2300 RPM'),
       new ChecklistItem('Turning toward runway: set flaps', 'FULL DOWN'),
-      new ChecklistItem('Final Glideslope Descent :', ''), //checkable=false
+      new ChecklistItem('Final Glideslope Descent', '', false),
       new ChecklistItem('Mixture', 'RICH (on final)'),
       new ChecklistItem('Speed: Establish', '75 KIAS 2100 RPM'),
       new ChecklistItem('Descent Rate', '-400 fpm'),

@@ -6,7 +6,7 @@
 				<a ng-repeat="section in checklist.getSections()"
 					class="list-group-item {{section.getId() === activeSection.getId() ? 'active' : ''}}" 
 					ng-href="#/checklist/{{checklist.getId()}}/{{section.getId()}}">
-						<span class="badge">{{section.getUncheckedItemCount()}}</span>
+						<span class="badge" ng-hide="section.getUncheckedItemCount() == 0">{{section.getUncheckedItemCount()}}</span>
 						{{section.getName()}}
 				</a>
 			</ul>
@@ -14,7 +14,7 @@
 		<div class="col-md-8">
 			<div class="panel panel-default">
 				<div class="panel-body secton-items">
-					<div class="row checklistitem" ng-class-odd="'checklistitem-odd'" ng-class-even="'checklistitem-even'" ng-repeat="item in activeSection.getItems()">
+					<div class="row checklistitem" ng-repeat="item in activeSection.getItems()" ng-class-odd="'checklistitem-odd'" ng-class-even="'checklistitem-even'" ng-class="item.isCheckable() ? '' : 'notcheckable'"  >
 						<a ng-click="item.switchChecked()">
 							<div class="row-inner ">
 								<div class="col-md-6">

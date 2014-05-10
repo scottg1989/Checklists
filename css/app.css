@@ -71,3 +71,12 @@ body {
 
 .item-text {
 }
+
+.notcheckable {
+	background-color: white;
+	font-weight: bold;
+}
+
+.notcheckable:hover {
+	background-color: white;
+}

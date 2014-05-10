@@ -44,4 +44,17 @@ describe('ChecklistItem', function () {
     item.switchChecked();
     expect(item.isChecked()).toEqual(false);
   });
+
+  it('supports optionally not being checkable', function () {
+    expect(item.isCheckable()).toEqual(true);
+
+    item.setCheckable(false);
+    expect(item.isCheckable()).toEqual(false);
+
+    item.setCheckable(true);
+    expect(item.isCheckable()).toEqual(true);
+
+    item = new ChecklistItem('name', 'value', false);
+    expect(item.isCheckable()).toEqual(false);
+  });
 });

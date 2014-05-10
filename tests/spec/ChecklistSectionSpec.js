@@ -48,6 +48,7 @@ describe('ChecklistSection', function () {
     section.addItem(new ChecklistItem());
     section.addItem(new ChecklistItem());
     section.addItem(new ChecklistItem());
+    section.addItem(new ChecklistItem('', '', false));
 
     section.getItems()[0].setChecked(true);
 

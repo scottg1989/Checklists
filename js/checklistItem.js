@@ -1,7 +1,8 @@
-function ChecklistItem(name, value) {
+function ChecklistItem(name, value, checkable) {
   this._name = name;
   this._value = value;
   this._checked = false;
+  this._checkable = (checkable !== undefined ? checkable : true);
 }
 
 ChecklistItem.prototype.setName = function (name) {
@@ -30,4 +31,12 @@ ChecklistItem.prototype.isChecked = function () {
 
 ChecklistItem.prototype.switchChecked = function () {
   this._checked = !this._checked;
+};
+
+ChecklistItem.prototype.setCheckable = function (checkable) {
+  this._checkable = checkable;
+};
+
+ChecklistItem.prototype.isCheckable = function () {
+  return this._checkable;
 };

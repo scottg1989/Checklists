@@ -8,7 +8,7 @@ describe('ChecklistCtrl', function () {
     var scope = {},
       ctrl = $controller('ChecklistCtrl', {$scope: scope});
 
-    expect(scope.checklists.length).toBe(2);
+    expect(scope.checklists.length).toBe(3);
   }));
 
 });
