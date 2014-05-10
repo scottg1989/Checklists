@@ -1,0 +1,633 @@
+{
+    "name": "Cessna 172 SP",
+    "sections": [
+        {
+            "name": "Pre-Start Checklist",
+            "items": [
+                {
+                    "name": "Parking Brakes",
+                    "value": "SET"
+                },
+                {
+                    "name": "Throttle",
+                    "value": "CLOSED"
+                },
+                {
+                    "name": "Magneto/Starter Switch",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Battery & Alternator Master Switches",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Avionics",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Fuel Pump Switch",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Mixture /Fuel Flow",
+                    "value": "CUTOFF"
+                },
+                {
+                    "name": "Battery Switch",
+                    "value": "ON"
+                },
+                {
+                    "name": "Flight controls",
+                    "value": "CHECK"
+                },
+                {
+                    "name": "Flaps",
+                    "value": "UP"
+                },
+                {
+                    "name": "Fuel Quantity",
+                    "value": "CHECK"
+                },
+                {
+                    "name": "Fuel Selector",
+                    "value": "BOTH"
+                },
+                {
+                    "name": "Avionics Switch",
+                    "value": "ON"
+                },
+                {
+                    "name": "Check Weather",
+                    "value": "(Atis, Flight Services)"
+                },
+                {
+                    "name": "Request Clearance",
+                    "value": ""
+                },
+                {
+                    "name": "Transponder",
+                    "value": "STANDBY"
+                },
+                {
+                    "name": "Beacon/Strobe Light",
+                    "value": "ON"
+                }
+            ]
+        },
+        {
+            "name": "Startup Checklist",
+            "items": [
+                {
+                    "name": "Throttle",
+                    "value": "OPEN 1/4 INCH"
+                },
+                {
+                    "name": "Mixture",
+                    "value": "RICH"
+                },
+                {
+                    "name": "Engine and Propeller Area",
+                    "value": "CLEAR"
+                },
+                {
+                    "name": "Fuel Pump Switch",
+                    "value": "ON"
+                },
+                {
+                    "name": "Magneto/Starter Switch",
+                    "value": "START"
+                },
+                {
+                    "name": "Throttle",
+                    "value": "IDLE"
+                },
+                {
+                    "name": "Alternator Switch",
+                    "value": "ON"
+                },
+                {
+                    "name": "Oil Pressure, Ammeter",
+                    "value": "CHECK"
+                },
+                {
+                    "name": "Engine Instruments",
+                    "value": "CHECK"
+                },
+                {
+                    "name": "Fuel Pump Switch",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Annunciator Lights",
+                    "value": "CHECK"
+                },
+                {
+                    "name": "Nav Lights",
+                    "value": "ON"
+                }
+            ]
+        },
+        {
+            "name": "Before Taxi Checklist",
+            "items": [
+                {
+                    "name": "Nav Lights",
+                    "value": "ON"
+                },
+                {
+                    "name": "Taxi Lights",
+                    "value": "ON"
+                },
+                {
+                    "name": "Heading Indicator/Altimeter",
+                    "value": "SET"
+                },
+                {
+                    "name": "Instruments",
+                    "value": "NORMAL OPERATION"
+                },
+                {
+                    "name": "Radios and Avionics",
+                    "value": "CHECKED and SET"
+                },
+                {
+                    "name": "Autopilot",
+                    "value": "SET and OFF"
+                },
+                {
+                    "name": "Request Taxi Clearance",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "name": "Taxi Checklist",
+            "items": [
+                {
+                    "name": "Throttle",
+                    "value": "MIN. POWER"
+                },
+                {
+                    "name": "Mixture",
+                    "value": "RICH"
+                },
+                {
+                    "name": "Parking Brake",
+                    "value": "RELEASE"
+                },
+                {
+                    "name": "Brakes",
+                    "value": "CHECK during taxi"
+                },
+                {
+                    "name": "Directional Gyro",
+                    "value": "PROPER IND. during turns"
+                },
+                {
+                    "name": "Turn Coordinator",
+                    "value": "PROPER IND. during turns"
+                },
+                {
+                    "name": "Artificial Horizon",
+                    "value": "ERECT during turns"
+                },
+                {
+                    "name": "Taxi to assigned runway",
+                    "value": "SPEED Max. 20 knots"
+                }
+            ]
+        },
+        {
+            "name": "Before Take-off Checklist",
+            "items": [
+                {
+                    "name": "Parking Brake",
+                    "value": "SET"
+                },
+                {
+                    "name": "Fuel Quantity",
+                    "value": "CHECK"
+                },
+                {
+                    "name": "Fuel Selector Valve",
+                    "value": "BOTH"
+                },
+                {
+                    "name": "Throttle",
+                    "value": "IDLE"
+                },
+                {
+                    "name": "Mixture",
+                    "value": "RICH"
+                },
+                {
+                    "name": "Alternator Switch",
+                    "value": "VERIFY ON"
+                },
+                {
+                    "name": "Throttle",
+                    "value": "1800 RPM"
+                },
+                {
+                    "name": "Magnetos",
+                    "value": "CHECK"
+                },
+                {
+                    "name": " ",
+                    "value": "< 150 RPM drop on each,"
+                },
+                {
+                    "name": " ",
+                    "value": "< 50 RPM drop between"
+                },
+                {
+                    "name": "Ammeter",
+                    "value": "CHECK Positive charge ind."
+                },
+                {
+                    "name": "Throttle",
+                    "value": "IDLE"
+                },
+                {
+                    "name": "Oil Temperature",
+                    "value": "CHECK"
+                },
+                {
+                    "name": "Elevator Trim",
+                    "value": "SET for takeoff"
+                },
+                {
+                    "name": "Flaps",
+                    "value": "SET 0-10 degrees"
+                },
+                {
+                    "name": "Flight Controls",
+                    "value": "FREE AND CORRECT"
+                },
+                {
+                    "name": "Radios and Avionics",
+                    "value": "SET"
+                },
+                {
+                    "name": "Landing Lights",
+                    "value": "ON"
+                },
+                {
+                    "name": "Pitot Heat",
+                    "value": "ON"
+                },
+                {
+                    "name": "Transponder",
+                    "value": "ON"
+                },
+                {
+                    "name": "Request Takeoff Clearance",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "name": "Take-off Checklist",
+            "items": [
+                {
+                    "name": "Smoothly increase thrust to",
+                    "value": "FULL"
+                },
+                {
+                    "name": "Brakes",
+                    "value": "RELEASE"
+                },
+                {
+                    "name": "V1 =",
+                    "value": "55 KIAS (descision)"
+                },
+                {
+                    "name": "Vr =",
+                    "value": "65 KIAS (rotate)"
+                },
+                {
+                    "name": "Pitch",
+                    "value": "10-15 degrees"
+                },
+                {
+                    "name": "At Positive Climb Rate",
+                    "value": "Touch Brakes"
+                },
+                {
+                    "name": "Trim for climb to maintain",
+                    "value": "75 KIAS"
+                },
+                {
+                    "name": "At 500' AGL",
+                    "value": "RETRACT Flaps if set"
+                },
+                {
+                    "name": "Engine Instruments",
+                    "value": "CHECK"
+                }
+            ]
+        },
+        {
+            "name": "Climb-out Checklist",
+            "items": [
+                {
+                    "name": "Throttle",
+                    "value": "2300 RPM"
+                },
+                {
+                    "name": "Mixture",
+                    "value": "RICH"
+                },
+                {
+                    "name": "Autopilot",
+                    "value": "CHECK and SET"
+                },
+                {
+                    "name": "Taxi Lights",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Landing Lights",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Airspeed",
+                    "value": "80 KIAS  2300 RPM"
+                },
+                {
+                    "name": "Climb Rate",
+                    "value": "700 fpm"
+                },
+                {
+                    "name": "ATC",
+                    "value": "AS REQUIRED"
+                }
+            ]
+        },
+        {
+            "name": "Cruise Checklist",
+            "items": [
+                {
+                    "name": "Accelerate to cruise speed",
+                    "value": "110 KIAS  2500 RPM"
+                },
+                {
+                    "name": "Engine+Instruments",
+                    "value": "CHECK"
+                },
+                {
+                    "name": "Engine Temperatures",
+                    "value": "STABILIZE at cruise cond."
+                },
+                {
+                    "name": "Fuel Quantity",
+                    "value": "CHECK"
+                },
+                {
+                    "name": "Radios",
+                    "value": "TUNED and SET"
+                },
+                {
+                    "name": "Autopilot",
+                    "value": "CHECK and SET"
+                },
+                {
+                    "name": "Lights",
+                    "value": "as required"
+                },
+                {
+                    "name": "Engine Instruments",
+                    "value": "CHECK"
+                }
+            ]
+        },
+        {
+            "name": "Descent Checklist",
+            "items": [
+                {
+                    "name": "Atis/Airport Information",
+                    "value": "CHECK"
+                },
+                {
+                    "name": "Fuel Selector",
+                    "value": "BOTH"
+                },
+                {
+                    "name": "Altimeter",
+                    "value": "CHECK"
+                },
+                {
+                    "name": "Radios",
+                    "value": "SET"
+                },
+                {
+                    "name": "Descent Speed",
+                    "value": "100 KIAS  2000 RPM"
+                },
+                {
+                    "name": "Descent Rate",
+                    "value": "-700 fpm"
+                },
+                {
+                    "name": "Flaps",
+                    "value": "CHECK UP"
+                }
+            ]
+        },
+        {
+            "name": "Approach Checklist",
+            "items": [
+                {
+                    "name": "Localizer Level Flight",
+                    "value": "",
+                    "checkable": "false"
+                },
+                {
+                    "name": "Fuel Pump",
+                    "value": "ON"
+                },
+                {
+                    "name": "Speed: Establish",
+                    "value": "85 KIAS  2100 RPM"
+                },
+                {
+                    "name": "Landing Lights",
+                    "value": "ON"
+                },
+                {
+                    "name": "Flaps",
+                    "value": "10 degrees"
+                },
+                {
+                    "name": "Speed: Establish",
+                    "value": "80 KIAS  2100 RPM"
+                },
+                {
+                    "name": "Flaps",
+                    "value": "20 degrees  2300 RPM"
+                },
+                {
+                    "name": "Turning toward runway: set flaps",
+                    "value": "FULL DOWN"
+                },
+                {
+                    "name": "Final Glideslope Descent",
+                    "value": "",
+                    "checkable": "false"
+                },
+                {
+                    "name": "Mixture",
+                    "value": "RICH (on final)"
+                },
+                {
+                    "name": "Speed: Establish",
+                    "value": "75 KIAS 2100 RPM"
+                },
+                {
+                    "name": "Descent Rate",
+                    "value": "-400 fpm"
+                },
+                {
+                    "name": "Elevator Trim",
+                    "value": "AS DESIRED"
+                },
+                {
+                    "name": "Parking Brake",
+                    "value": "VERIFY OFF"
+                }
+            ]
+        },
+        {
+            "name": "Landing Checklist",
+            "items": [
+                {
+                    "name": "Autopilot",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Landing Speed",
+                    "value": "65 KIAS"
+                },
+                {
+                    "name": "Touchdown",
+                    "value": "MAIN WHEELS FIRST"
+                },
+                {
+                    "name": "Landing Roll",
+                    "value": "LOWER NOSE WHEEL"
+                },
+                {
+                    "name": "Brakes",
+                    "value": "MINIMUM REQUIRED"
+                }
+            ]
+        },
+        {
+            "name": "Taxi To Ramp",
+            "items": [
+                {
+                    "name": "Flaps",
+                    "value": "RETRACT"
+                },
+                {
+                    "name": "Taxi Lights",
+                    "value": "ON"
+                },
+                {
+                    "name": "Landing Lights",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Speed Max.",
+                    "value": "20 knots"
+                },
+                {
+                    "name": "Throttle",
+                    "value": "AS REQUIRED"
+                },
+                {
+                    "name": "Elevator Trim",
+                    "value": "TAKEOFF SETTING"
+                },
+                {
+                    "name": "Avionics/Radios",
+                    "value": "AS REQUIRED"
+                },
+                {
+                    "name": "Transponder",
+                    "value": "1200"
+                }
+            ]
+        },
+        {
+            "name": "Shutdown Checklist",
+            "items": [
+                {
+                    "name": "Parking Brake",
+                    "value": "SET"
+                },
+                {
+                    "name": "Throttle",
+                    "value": "IDLE"
+                },
+                {
+                    "name": "Fuel Pump",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Avionics Switch",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Taxi Lights",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Nav Lights",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Pitot Heat",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Mixture/Fuel Flow",
+                    "value": "CUTOFF"
+                },
+                {
+                    "name": "Fuel Selector Valve",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Magneto/Starter Switch",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Beacon/Strobe Light",
+                    "value": "OFF"
+                },
+                {
+                    "name": "Battery & Alternator Master Switches",
+                    "value": "OFF"
+                }
+            ]
+        },
+        {
+            "name": "Securing Aircraft",
+            "items": [
+                {
+                    "name": "Parking Brake Verify",
+                    "value": "SET"
+                },
+                {
+                    "name": "Throttle Verify",
+                    "value": "IDLE"
+                },
+                {
+                    "name": "All Switches Verify",
+                    "value": "OFF"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "ChecklistServer",
+  "description": "Backend for the checklist application",
+  "author": "Scott Gulliver",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "request": "2.x",
+    "body-parser": "1.x"
+  }
+}

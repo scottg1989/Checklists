@@ -1,0 +1,39 @@
+{
+    "name": "Checklist1",
+    "sections": [
+        {
+            "name": "Checklist1Section1",
+            "items": [
+                {
+                    "name": "C1S1a",
+                    "value": "A"
+                },
+                {
+                    "name": "C1S1b",
+                    "value": "B"
+                },
+                {
+                    "name": "C1S1c",
+                    "value": "C"
+                }
+            ]
+        },
+        {
+            "name": "Checklist1Section2",
+            "items": [
+                {
+                    "name": "C1S2a",
+                    "value": "A"
+                },
+                {
+                    "name": "C1S2b",
+                    "value": "B"
+                },
+                {
+                    "name": "C1S2c",
+                    "value": "C"
+                }
+            ]
+        }
+    ]
+}
