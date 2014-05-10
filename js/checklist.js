@@ -1,38 +1,39 @@
 function Checklist(id, name, sections) {
-  this._id = id;
-  this._name = name;
-  this._sections = (sections === undefined ? [] : sections);
+  var _id = id;
+  var _name = name;
+  var _sections = (sections === undefined ? [] : sections);
+  var _imageUrl = '';
+
+  this.setId = function (id) {
+    _id = id;
+  };
+
+  this.getId = function () {
+    return _id;
+  };
+
+  this.setName = function (name) {
+    _name = name;
+    _imageUrl = '';
+  };
+
+  this.getName = function () {
+    return _name;
+  };
+
+  this.setImageUrl = function (imageUrl) {
+    _imageUrl = imageUrl;
+  };
+
+  this.getImageUrl = function () {
+    return _imageUrl;
+  };
+
+  this.getSections = function () {
+    return _sections;
+  };
+
+  this.addSection = function (section) {
+    _sections.push(section);
+  };
 }
-
-Checklist.prototype.setId = function (id) {
-  this._id = id;
-};
-
-Checklist.prototype.getId = function () {
-  return this._id;
-};
-
-Checklist.prototype.setName = function (name) {
-  this._name = name;
-  this._imageUrl = '';
-};
-
-Checklist.prototype.getName = function () {
-  return this._name;
-};
-
-Checklist.prototype.setImageUrl = function (imageUrl) {
-  this._imageUrl = imageUrl;
-};
-
-Checklist.prototype.getImageUrl = function () {
-  return this._imageUrl;
-};
-
-Checklist.prototype.getSections = function () {
-  return this._sections;
-};
-
-Checklist.prototype.addSection = function (section) {
-  this._sections.push(section);
-};
