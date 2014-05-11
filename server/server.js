@@ -18,30 +18,6 @@ var guid = (function () {
   };
 }());
 
-/*function createChecklist(req, res) {
-  var checklistToCreate = req.body.checklist;
-  if (checklistToCreate === undefined) {
-    res.send('Checklist must be supplied');
-    return;
-  }
-
-  var options = {
-    method: 'post',
-    body: checklistToCreate,
-    json: true,
-    url: url
-  }
-
-  request(options, function (err, result, body) {
-    if (err) {
-      res.send(result);
-      return;
-    }
-
-    res.send(201, '');
-  });
-}*/
-
 function deleteDatabase(callback) {
   console.log('Deleting database..');
   request({method: 'delete', url: checklistDbUrl}, function (err, result, body) {
@@ -123,8 +99,6 @@ function getChecklistById(checklistid, callback) {
     url: checklistDbUrl + checklistid
   };
 
-  console.log(options.url);
-
   request(options, function (err, result, body) {
     if (err) {
       throw err;
@@ -162,6 +136,14 @@ function getChecklists(req, res) {
   });
 }
 
+function getChecklist(req, res) {
+  var id = req.params.id;
+
+  getChecklistById(id, function (checklist) {
+    res.send(200, checklist);
+  });
+}
+
 if (process.argv.length > 2) {
   var i;
   for (i = 2; i < process.argv.length; i++) {
@@ -171,14 +153,21 @@ if (process.argv.length > 2) {
     }
   }
 } else {
-  console.log('started server.');
+  console.log("Express server running at => http://localhost:8080" + "/\nCTRL + C to shutdown");
 
 
 
   var app = express();
   app.use(bodyParser());
 
+  app.all('*', function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+  });
+
   app.get('/api/checklists', getChecklists);
+  app.get('/api/checklists/:id', getChecklist);
 
   app.listen(8080);
 
